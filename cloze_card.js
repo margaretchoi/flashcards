@@ -4,7 +4,7 @@ exports.ClozeCard = function(text, cloze) {
 	let clozeToLower = cloze.toLowerCase();
 
 	if (!textToLower.includes(clozeToLower)) {
-		console.log('Error: cloze-deletion ' + cloze + ' not found');
+		console.log('Error: cloze-deletion ' + cloze + ' not found' + '\n');
 		return;
 	} 
 
