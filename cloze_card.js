@@ -1,4 +1,8 @@
-exports.ClozeCard = function(text, cloze) {
+exports.ClozeCard = function ClozeCard(text, cloze) {
+
+	if (!(this instanceof ClozeCard)){
+		return new ClozeCard(text, cloze);
+	}
 
 	let textToLower = text.toLowerCase();
 	let clozeToLower = cloze.toLowerCase();

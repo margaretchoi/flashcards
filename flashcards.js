@@ -24,25 +24,8 @@ console.log('Full Text: ', firstPresidentCloze.full + '\n');
 let brokenCloze = new cloze.ClozeCard("This doesn't work", "oops");
 
 
-
 // Example of how to call constructors without using NEW keyword
-
-let BasicCard = function(front, back) {
-
-	// this.front = front;
-	// this.back = back;
-
-	if (!(this instanceof BasicCard)){
-		return new BasicCard(front, back);
-	}
-	
-	this.front = front;
-	this.back = back;
-	
-	return this;
-}
-
-let firstPresidentNew = BasicCard(
+let firstPresidentNew = basic.BasicCard(
 	'Who was the first president of the United States?', 'George Washington');
 
 console.log(firstPresidentNew);
